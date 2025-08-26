@@ -1,4 +1,4 @@
-// EXERCICIO 01
+/*EXERCICIO 01
 const kmlitro = 12.5;
 const precogasolina = 6.44;
 const tempoviagem = 4;
@@ -7,6 +7,9 @@ let distancia = tempoviagem * velocidadeMedia;
 let quantidadeDeLitros = distancia/ kmlitro;
 let custo = quantidadeDeLitros * precogasolina;
 console.log("Custo da Viagem R$ " + custo);
+*/
+
+
 
 /* EXERCICIO 02
 const A =3;
