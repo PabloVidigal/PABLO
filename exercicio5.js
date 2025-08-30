@@ -37,8 +37,70 @@ console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundari
 
 // EXERCICIO 03
 
+const ldA = 3;
+const ldB = 3;
+const ldC = 3;
 
+if (ldA + ldB > ldC && ldA + ldC > ldB && ldB + ldC > ldA) {
+    
+    if (ldA == ldB && ldB == ldC) {
+        console.log("É um triângulo | Triângulo Equilátero");
+    } else if (ldA == ldB || ldA == ldC || ldB == ldC) {
+        console.log("É um triângulo | Triângulo Isósceles");
+    } else {
+        console.log("É um triângulo | Triângulo Escaleno");
+    }
 
+} else {
+    console.log("Não é um triângulo");
+}
 
-  
+// EXERCICIO 04
+
+const valorNm = 120;
+
+let euro = "Euro";
+let libraEsterlina = "Libra Esterlina";
+let dolar = "Dolar";
+
+let decisao = euro;
+
+const valorEuro = 5.418;
+const valorLibraEsterlina = 6.336;
+const valorDolar = 5.189;
+
+if(decisao == euro){
+    let calculorEuro = (valorNm / valorEuro).toFixed(2);
+    console.log("Conversão de Reais = R$",valorNm,"Para Euro = €",calculorEuro);
+} else if(decisao == libraEsterlina){
+    let calculorLibra = (valorNm / valorLibraEsterlina).toFixed(2);
+    console.log("Conversão de Reais = R$",valorNm,"Para Libra = £",calculorLibra);
+} else if(decisao == dolar){
+     let calculorDolar = (valorNm / valorDolar).toFixed(2);
+     console.log("Conversão de Reais = R$",valorNm,"Para Dolar = $",calculorDolar);
+}
+
+// EXERCICIO 05
+
+const valorProduto = 250;
+let formaPagamento1 = "À vista, dinheiro ou cheque";
+let formaPagamento2 = "À vista, cartão de credito";
+let formaPagamento3 = "Em 2 vezes, preço normal da etiqueta";
+let formaPagamento4 = "Em 3 vezes, preço normal da etiqueta + 10% de juros";
+
+let decisao1 = formaPagamento4;
+
+if(decisao1 == formaPagamento1){
+   let calculoA = valorProduto - (valorProduto * 0.10);
+   console.log("Valor Inicial: R$",valorProduto,"Valor Final: R$",calculoA.toFixed(2)); 
+} else if(decisao1 == formaPagamento2){
+    let calculoB = valorProduto - (valorProduto * 0.05);
+    console.log("Valor Inicial: R$",valorProduto,"Valor Final: R$",calculoB.toFixed(2)); 
+} else if(decisao1 == formaPagamento3){
+    let calculoC = valorProduto / 2;
+    console.log("Valor Inicial: R$",valorProduto,"Valor Parcelado: R$",calculoC.toFixed(2),"Valor Final; R$",valorProduto); 
+} else if(decisao1 == formaPagamento4){
+    let calculoD = valorProduto + (valorProduto * 0.10);
+    let parcela = calculoD / 3;
+    console.log("Valor Inicial: R$",valorProduto,"Valor Parcelado: R$",parcela.toFixed(2),"Valor Final; R$",calculoD.toFixed(2)); 
 }
