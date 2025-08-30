@@ -35,7 +35,7 @@ if( arcondicionado == true){
 } else{
 console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundarios: R$",0);
 
-// EXERCICIO
+// EXERCICIO 03
 
 
 
