@@ -104,3 +104,30 @@ if(decisao1 == formaPagamento1){
     let parcela = calculoD / 3;
     console.log("Valor Inicial: R$",valorProduto,"Valor Parcelado: R$",parcela.toFixed(2),"Valor Final; R$",calculoD.toFixed(2)); 
 }
+
+//EXERCICIO 06
+
+const litros = 10.250;
+
+const alcool = "Alcool";
+const dielsel = "Diesel";
+const gasolina = "Gasolina";
+
+const alcool1 = 4.805;
+const diesel2 = 5.953;
+const gasolina3 = 6.565;
+
+let decisao2 = alcool1;
+let decisao3 = alcool;
+
+if(decisao2 == alcool1){
+    let calculoCombus1 = litros * alcool1;
+    console.log("Tipo de combustivel:",decisao3,"Litros Abastecido: LT", litros.toFixed(3),"Preço em R$: ",calculoCombus1.toFixed(2));
+} else if(decisao2 == diesel2){
+    let calculoCombus2 = litros *diesel2;
+    console.log("Tipo de combustivel:",decisao3,"Litros Abastecido: LT", litros.toFixed(3),"Preço em R$: ",calculoCombus2.toFixed(2));
+} else if(decisao2 == gasolina3){
+    let calculoCombus3 = litros * gasolina3;
+    console.log("Tipo de combustivel:",decisao3,"Litros Abastecido: LT", litros.toFixed(3),"Preço em R$: ",calculoCombus3.toFixed(2));
+
+}
