@@ -34,7 +34,7 @@ if( arcondicionado == true){
     console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundarios: R$", entrada + valorAr + valorPintura + valorVidro + valorDirecao);
 } else{
 console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundarios: R$",0);
-
+}
 // EXERCICIO 03
 
 const ldA = 3;
@@ -129,5 +129,4 @@ if(decisao2 == alcool1){
 } else if(decisao2 == gasolina3){
     let calculoCombus3 = litros * gasolina3;
     console.log("Tipo de combustivel:",decisao3,"Litros Abastecido: LT", litros.toFixed(3),"Preço em R$: ",calculoCombus3.toFixed(2));
-
-}
+};
