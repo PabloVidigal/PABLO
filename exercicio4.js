@@ -1,4 +1,4 @@
-//lista usando estrutura condicional simples em (javascript)
+
 
 //EXERCICIO 1
 const entrada = 15;
