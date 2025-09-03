@@ -1,5 +1,3 @@
-//lista usando estrutura condicional simples em (javascript)
-
 //EXERCICIO 1
 const entrada = 15;
 let calculo = entrada % 2;
@@ -62,4 +60,23 @@ if(calcular == 0){
 }
 if(calcular > 0){
     console.log("Raizes Distintas");
+}
+
+//EXERCICIO 06
+const saldo = 5000;
+const numero = 1237663965;
+const nome = "Pablo";
+let somatorio = saldo / 6;
+
+if(somatorio < 1000){
+    console.log("Tarifa: Basica|Saldo atualizado: R$",(somatorio - 25).toFixed(2));
+}
+if(somatorio >= 1000.01 && somatorio <= 2000){
+    console.log("Tarifa: Prata|Saldo atualizado: R$",(somatorio - 20).toFixed(2));
+}
+if(somatorio >= 2000.01 && somatorio <= 3500){
+    console.log("Tarifa: Ouro|Saldo atualizado: R$", (somatorio - 13).toFixed(2));
+}
+if(somatorio > 3500){
+    console.log("Tarifa: Premio|Saldo Isento de tarifa: R$",somatorio.toFixed(2));
 }
