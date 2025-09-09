@@ -180,10 +180,10 @@ let n1 = 8;
 let n2 = 6;
 let n3 = 10;
 
-let opcao = 4; 
+let opcaao = 5; 
 let media = 0;
 
-switch (opcao) {
+switch (opcaao) {
     case 1: 
         media = (n1 + n2 + n3) / 3;
         console.log("Media aritmetica: " + media.toFixed(2));
@@ -205,7 +205,7 @@ switch (opcao) {
     break;
 
     case 5: 
-        media = Math.sqrt( Math.sqrt((Math.pow(n1, 2) + Math.pow(n2, 2) + Math.pow(n3, 2)) / 3);
+        media = Math.sqrt(((Math.pow(n1, 2) + Math.pow(n2, 2) + Math.pow(n3, 2)) / 3));
         console.log("Média quadrática: " + media.toFixed(2));
         break;
 
@@ -219,25 +219,25 @@ let raio = 5;
 let altura = 10; 
 
 let volume = 0;
-let area = 0;
+let areaa = 0;
 const pi = Math.PI;
 
 
 switch (opcao) {
     case 1: 
         volume = (pi * Math.pow(raio, 2) * altura) / 3;
-        area = pi * raio * Math.sqrt(Math.pow(raio, 2) + Math.pow(altura, 2));
-        console.log("Cone reto - Volume: " + volume.toFixed(2) + ", Área: " + area.toFixed(2));
+        areaa = pi * raio * Math.sqrt(Math.pow(raio, 2) + Math.pow(altura, 2));
+        console.log("Cone reto - Volume: " + volume.toFixed(2) + ", Área: " + areaa.toFixed(2));
         break;
     case 2:  
         volume = pi * Math.pow(raio, 2) * altura;
-        area = 2 * pi * raio * altura + 2 * pi * Math.pow(raio, 2);
-        console.log("Cilindro - Volume: " + volume.toFixed(2) + ", Área: " + area.toFixed(2));
+        areaa = 2 * pi * raio * altura + 2 * pi * Math.pow(raio, 2);
+        console.log("Cilindro - Volume: " + volume.toFixed(2) + ", Área: " + areaa.toFixed(2));
         break;
     case 3:  
         volume = (4 / 3) * pi * Math.pow(raio, 3);
-        area = 4 * pi * Math.pow(raio, 2);
-        console.log("Esfera - Volume: " + volume.toFixed(2) + ", Área: " + area.toFixed(2));
+        areaa = 4 * pi * Math.pow(raio, 2);
+        console.log("Esfera - Volume: " + volume.toFixed(2) + ", Área: " + areaa.toFixed(2));
         break;
     default:
         console.log("Opção inválida!");
