@@ -125,8 +125,8 @@ if (preco > 0) {
 // EXERCICIO 05
 
 let nomeFazendeiro = "Fulano de tal";
-let tipoPulverizacao = 4;   
-let area = 500;
+let tipoPulverizacao = 1;   
+let area = 300;
 let precoPorAcre = 0;
 let custo = 0;
 
@@ -153,7 +153,7 @@ custo = precoPorAcre * area;
 
 switch (true) {
     case (area > 300):
-        custo = custo * 0.50;
+        custo = custo * 0.95;
         break;
     default:
         
@@ -164,7 +164,7 @@ switch (true) {
 switch (true) {
     case (custo > 10750):
         let excedente = custo - 10750;
-        custo = 10750 + (excedente * 1.00);
+        custo = 10750 + (excedente * 0.10);
         break;
     default:
         
