@@ -186,22 +186,22 @@ let media = 0;
 switch (opcao) {
     case 1: 
         media = (n1 + n2 + n3) / 3;
-        console.log("Média aritmética: " + media.toFixed(2));
+        console.log("Media aritmetica: " + media.toFixed(2));
         break;
 
     case 2: 
         media = ((n1 * 3) + (n2 * 3) + (n3 * 4)) / 10;
-        console.log("Média ponderada: " + media.toFixed(2));
+        console.log("Media ponderada: " + media.toFixed(2));
         break;
 
     case 3: 
         media = 3 / ((1 / n1) + (1 / n2) + (1 / n3));
-        console.log("Média harmônica: " + media.toFixed(2));
+        console.log("Media harmonica: " + media.toFixed(2));
         break;
 
     case 4: 
     media = Math.pow(n1 * n2 * n3, 1/3); 
-    console.log("Média geométrica: " + media.toFixed(2));
+    console.log("Media geometrica: " + media.toFixed(2));
     break;
 
     case 5: 
