@@ -95,3 +95,150 @@ switch(opc){
         console.log("opção indisponivel");
 }
 console.log("Sua opção foi: " + sim + " Calculo foi: " + calculo2);
+
+// EXERCICIO 04
+
+let tipoCombustivel = 2;  
+let litros = 20;          
+let preco = 0;
+let valor = 0;
+
+switch (tipoCombustivel) {
+    case 1:
+        preco = 4.805; 
+        break;
+    case 2:
+        preco = 5.953; 
+        break;
+    case 3:
+        preco = 6.565; 
+        break;
+    default:
+        console.log("Tipo de combustIvel invAlido");
+}
+
+if (preco > 0) {
+    valor = preco * litros;
+    console.log("Valor a ser pago: R$ " + valor.toFixed(2));
+}
+
+// EXERCICIO 05
+
+let nomeFazendeiro = "Fulano de tal";
+let tipoPulverizacao = 4;   
+let area = 500;
+let precoPorAcre = 0;
+let custo = 0;
+
+
+switch (tipoPulverizacao) {
+    case 1:
+        precoPorAcre = 50.00;
+        break;
+    case 2:
+        precoPorAcre = 100.00;
+        break;
+    case 3:
+        precoPorAcre = 150.00;
+        break;
+    case 4:
+        precoPorAcre = 250.00;
+        break;
+    default:
+        console.log("Tipo de pulverização inválido!");
+}
+
+custo = precoPorAcre * area;
+
+
+switch (true) {
+    case (area > 300):
+        custo = custo * 0.50;
+        break;
+    default:
+        
+        break;
+}
+
+
+switch (true) {
+    case (custo > 10750):
+        let excedente = custo - 10750;
+        custo = 10750 + (excedente * 1.00);
+        break;
+    default:
+        
+        break;
+}
+
+console.log("Fazendeiro: " + nomeFazendeiro);
+console.log("Valor a ser pago: R$ " + custo.toFixed(2));
+
+//EXERCICIO 06
+
+let n1 = 8;
+let n2 = 6;
+let n3 = 10;
+
+let opcao = 4; 
+let media = 0;
+
+switch (opcao) {
+    case 1: 
+        media = (n1 + n2 + n3) / 3;
+        console.log("Media aritmetica: " + media.toFixed(2));
+        break;
+
+    case 2: 
+        media = ((n1 * 3) + (n2 * 3) + (n3 * 4)) / 10;
+        console.log("Media ponderada: " + media.toFixed(2));
+        break;
+
+    case 3: 
+        media = 3 / ((1 / n1) + (1 / n2) + (1 / n3));
+        console.log("Media harmonica: " + media.toFixed(2));
+        break;
+
+    case 4: 
+    media = Math.pow(n1 * n2 * n3, 1/3); 
+    console.log("Media geometrica: " + media.toFixed(2));
+    break;
+
+    case 5: 
+        media = Math.sqrt( Math.sqrt((Math.pow(n1, 2) + Math.pow(n2, 2) + Math.pow(n3, 2)) / 3);
+        console.log("Média quadrática: " + media.toFixed(2));
+        break;
+
+    default:
+        console.log("Opção inválida!");
+}
+//EXERCICIO 07
+
+let opcao = 1;
+let raio = 5;   
+let altura = 10; 
+
+let volume = 0;
+let area = 0;
+const pi = Math.PI;
+
+
+switch (opcao) {
+    case 1: 
+        volume = (pi * Math.pow(raio, 2) * altura) / 3;
+        area = pi * raio * Math.sqrt(Math.pow(raio, 2) + Math.pow(altura, 2));
+        console.log("Cone reto - Volume: " + volume.toFixed(2) + ", Área: " + area.toFixed(2));
+        break;
+    case 2:  
+        volume = pi * Math.pow(raio, 2) * altura;
+        area = 2 * pi * raio * altura + 2 * pi * Math.pow(raio, 2);
+        console.log("Cilindro - Volume: " + volume.toFixed(2) + ", Área: " + area.toFixed(2));
+        break;
+    case 3:  
+        volume = (4 / 3) * pi * Math.pow(raio, 3);
+        area = 4 * pi * Math.pow(raio, 2);
+        console.log("Esfera - Volume: " + volume.toFixed(2) + ", Área: " + area.toFixed(2));
+        break;
+    default:
+        console.log("Opção inválida!");
+}
