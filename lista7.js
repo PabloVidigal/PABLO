@@ -30,3 +30,11 @@ const n = 12;
 const p = 0.01;
 const i = 0.5;
 console.log(calculoL3(i,p,n).toFixed(2));
+
+//EXERCICIO 04 - LISTA 02
+
+const valorP = 200;
+const taxaJ = 0.50;
+const tempoA = 20;
+
+
