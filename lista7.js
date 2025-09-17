@@ -33,8 +33,26 @@ console.log(calculoL3(i,p,n).toFixed(2));
 
 //EXERCICIO 04 - LISTA 02
 
+function calcularTaxa(valorP,taxaJ,tempoA){
+    return valorP+(valorP *(taxaJ/100)*tempoA);
+}
+
 const valorP = 200;
 const taxaJ = 0.50;
 const tempoA = 20;
 
+console.log(calcularTaxa(valorP,taxaJ,tempoA));
 
+
+// EXERCICIO 06 - LISTA 03
+
+function inverterNumero(entrada){
+    let unidade = entrada % 10;
+    let dezena = Math.floor((entrada % 100) / 10);
+    let centena = Math.floor(entrada / 100);
+    let resultado = unidade * 100 + dezena * 10 + centena;
+    return resultado
+}
+
+const entrada = 123;
+console.log(inverterNumero(entrada)) 
