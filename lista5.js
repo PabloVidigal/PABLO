@@ -1,13 +1,12 @@
 // EXERCICIO 01
-const numero = Math.sqrt(150);
-let verificacao = Number.isInteger(numero);
-
-if(verificacao == true){
+const numero = 150;
+let calculo = Math.trunc(Math.sqrt(numero));
+let verificacao2 = math.pow(calculo,2);
+if(verificacao2 === numero){
     console.log("Numero inteiro: Quadrado Perfeito")
-}
-else if(verificacao == false){
+} else {
 console.log("Numero não inteiro: Qudrado não Perfeito");
-}
+};
 
 // EXERCICIO 02
 const entrada = 20000;
@@ -26,11 +25,17 @@ const valorDirecao = 2000;
 
 if( arcondicionado == true){
     console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundarios: R$", entrada + valorAr);
-}else if(arcondicionado == true || pinturaMetalica == true){
+} if(pinturaMetalica == true){
+    console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundarios: R$", entrada + valorPintura);
+} if(vidroEletrico == true){
+    console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundarios: R$", entrada + valorVidro);
+}if(direcaoHidraulica == true){
+    console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundarios: R$", entrada + valorDirecao);
+} if(arcondicionado == true || pinturaMetalica == true){
     console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundarios: R$", entrada + valorAr + valorPintura);
-}else if(arcondicionado == true || pinturaMetalica == true || vidroEletrico == true){
+} if(arcondicionado == true || pinturaMetalica == true || vidroEletrico == true){
     console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundarios: R$", entrada + valorAr + valorPintura + valorVidro);
-}else if(arcondicionado == true || pinturaMetalica == true || vidroEletrico == true || direcaoHidraulica == true){
+} if(arcondicionado == true || pinturaMetalica == true || vidroEletrico == true || direcaoHidraulica == true){
     console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundarios: R$", entrada + valorAr + valorPintura + valorVidro + valorDirecao);
 } else{
 console.log("Valor de fabrica: R$",entrada,"Valor de fabrica junto aos secundarios: R$",0);

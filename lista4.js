@@ -1,5 +1,3 @@
-//lista usando estrutura condicional simples em (javascript)
-
 //EXERCICIO 1
 const entrada = 15;
 let calculo = entrada % 2;
