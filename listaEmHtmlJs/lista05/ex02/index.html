@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa pagamento Carro</title>
+</head>
+<body>
+    <h1>Programa para pagar um carro</h1>
+    <h2>Dados do pagamento: </h2>
+    <form>
+        <p>Entrada: <input type="text" id="IdInEntrada"> </p>
+          <p>Possui Arcondicionado? (S/N): <input type="text" id="IdInAr"> </p>
+            <p>Possui Pintura Metalica? (S/N): <input type="text" id="IdInMetalico"> </p>
+              <p>Possui Vidro Eletrico? (S/N): <input type="text" id="IdInVidro"> </p>
+                <p>Possui Direção Hidraulica? (S/N): <input type="text" id="IdInHidraulico"> </p>
+        <p><input type="button" id="btnCalcular" value="Calcular Salario" onclick ="eventoBtnVerificar()"></p>
+        <h2><p>Resultado</p></h2>
+        <p id="idOnResultado"></p>
+       
+    </form>
+    <script src="js/programa.js"></script>
+</body>
+</html>
