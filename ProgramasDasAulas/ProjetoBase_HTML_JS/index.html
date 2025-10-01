@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Base HTML Javascript</title> <!-- titulo aba-->
+</head>
+<body>
+    <h1>Projeto Base HTML Javascript</h1>
+    <form>
+        <h2>ENTRADA DE DADOS</h2>
+        <!--ENTRADA DE DADOS DO TIPO TEXTO-->
+        <p>Texto01: <input id="idInTexto01" type="text" placeholder="Texto01"></p>
+        <!--ENTRADA DE DADOS DO TIPO NUMBER-->
+        <p>Texto02: <input id="idInTexto02" type="number" placeholder="Texto02"></p>
+        <!--ENTRADA DE DADOS POR UMA CAIXA DE ESCOLHA-->
+        Texto03
+        <select name="Texto03" id="idINTexto03">
+            <option value="item 01">item 01</option>
+            <option value="item 02">item 02</option>
+            <option value="item 03">item 03</option>
+        </select>
+        <p>
+            <!--Botao de geração de evento-->
+            <input id="btnExecutar" type="button" value="Executar" onclick="acaoBotaoExecutar()">
+        </p>
+    </form>
+    <h2>Resultado</h2>
+    <!-- item usada para saida de dados-->
+    <h3 id="idOnResultado"></h3>
+    
+    <script src="js/programa.js"></script>
+</body>
+</html>
