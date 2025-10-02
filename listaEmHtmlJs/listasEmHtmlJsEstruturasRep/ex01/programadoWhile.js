@@ -5,15 +5,13 @@ function tabuada(valor) {
 let resultado = "";
     let i = 1;
     do {
-        resultado += valor + " x " + i + " = " + (valor * i) + "\n";
-        i++;
+ resultado += valor + " x " + i + " = " + (valor * i) + "\n";
+    i++;
     } while (i <= 10);
     return resultado;
 }
-
-
 function eventoBtnCalcularTabuada() {
-    let valorNumero = parseFloat(valor.value);
+    let valorNumero = Number(valor.value);
     const valorFinal = tabuada(valorNumero);
     resultado.innerText = valorFinal;
 }
