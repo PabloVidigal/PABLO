@@ -1,4 +1,4 @@
-const numero = document.getElementById("idInNome");
+const numero = document.getElementById("idInNumero");
 const btnCalcularIMC = document.getElementById("btnCalcularIMC");
 const resultado = document.getElementById("idOnResultado");
 
